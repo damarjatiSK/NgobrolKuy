@@ -9,7 +9,6 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/image_profile"
-        android:onClick="handleRoom2"
         android:layout_width="500px"
         android:layout_height="500px"
         android:src="@drawable/profile_placeholder"
@@ -47,11 +46,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:fontFamily="@font/redhatdisplay_regular"
-        android:text="Lengkapi profil Anda dengan foto profil yang cantik"
+        android:text="Klik lagi untuk memasukan gambar."
         android:textColor="@color/white"
         android:gravity="center_horizontal"
         android:textSize="14pt"
@@ -60,26 +59,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_profile" />
 
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginStart="64dp"-->
+<!--        android:layout_marginEnd="64dp"-->
+<!--        android:fontFamily="@font/redhatdisplay_regular"-->
+<!--        android:text="Masukan gambar"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:textSize="14pt"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/image_profile" />-->
 
-    <TextView
-        android:id="@+id/lewati"
-        android:visibility="visible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lewati"
-        android:onClick="handleRoom"
-        android:fontFamily="@font/redhatdisplay_regular"
-        android:textStyle="bold"
-        android:textSize="12pt"
-        android:textColor="@color/white"
-        android:layout_margin="32dp"
-        android:background="@drawable/rounded_outline"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/lanjut"
-        android:visibility="invisible"
+        android:onClick="handleRoom"
+        android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="32dp"

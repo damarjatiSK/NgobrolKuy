@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -49,13 +50,23 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/Username"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
+                android:hint="Masukkan username Anda"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:textColor="@color/light_gray"
+                android:background="@null"/>
+
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/text_newusername"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Masukkan username Anda"-->
+<!--                />-->
 
         </androidx.cardview.widget.CardView>
 
@@ -76,13 +87,22 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/Email"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan email Anda"
+                android:hint="Masukkan email Anda"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:textColor="@color/light_gray"
+                android:background="@null"/>
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/text_newemail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Masukkan username Anda"-->
+<!--                />-->
 
         </androidx.cardview.widget.CardView>
 
@@ -103,13 +123,22 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/Password"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
+                android:hint="Masukkan password Anda"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:textColor="@color/light_gray"
+                android:background="@null"/>
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/text_newpassword"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Masukkan username Anda"-->
+<!--                />-->
 
         </androidx.cardview.widget.CardView>
 
@@ -130,13 +159,22 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/ConfirmPass"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan lagi password Anda"
+                android:hint="Confirm masi password"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:textColor="@color/light_gray"
+                android:background="@null"/>
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/text_newconfirmpass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Masukkan username Anda"-->
+<!--                />-->
 
         </androidx.cardview.widget.CardView>
 
@@ -156,6 +194,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
+            android:onClick="handleRegister"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textStyle="bold"
             android:textSize="12pt"
@@ -171,6 +210,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun?"
+        android:onClick="handleLogin"
         android:fontFamily="@font/redhatdisplay_regular"
         android:textStyle="bold"
         android:textSize="12pt"
